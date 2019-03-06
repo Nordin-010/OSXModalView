@@ -11,6 +11,8 @@
 		968D005E222FD540004B8D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D005D222FD540004B8D89 /* ViewController.swift */; };
 		968D0060222FD541004B8D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968D005F222FD541004B8D89 /* Assets.xcassets */; };
 		968D0063222FD541004B8D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968D0061222FD541004B8D89 /* Main.storyboard */; };
+		968D006F222FD597004B8D89 /* SimpleModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D006D222FD597004B8D89 /* SimpleModal.swift */; };
+		968D0070222FD597004B8D89 /* SimpleModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968D006E222FD597004B8D89 /* SimpleModal.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		968D0062222FD541004B8D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		968D0064222FD541004B8D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968D0065222FD541004B8D89 /* ModalViewExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModalViewExample.entitlements; sourceTree = "<group>"; };
+		968D006D222FD597004B8D89 /* SimpleModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModal.swift; sourceTree = "<group>"; };
+		968D006E222FD597004B8D89 /* SimpleModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleModal.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 		968D004F222FD540004B8D89 = {
 			isa = PBXGroup;
 			children = (
+				968D006B222FD557004B8D89 /* CustomViews */,
 				968D005A222FD540004B8D89 /* ModalViewExample */,
 				968D0059222FD540004B8D89 /* Products */,
 			);
@@ -61,6 +66,23 @@
 				968D0065222FD541004B8D89 /* ModalViewExample.entitlements */,
 			);
 			path = ModalViewExample;
+			sourceTree = "<group>";
+		};
+		968D006B222FD557004B8D89 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				968D006C222FD571004B8D89 /* SimpleModal */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		968D006C222FD571004B8D89 /* SimpleModal */ = {
+			isa = PBXGroup;
+			children = (
+				968D006D222FD597004B8D89 /* SimpleModal.swift */,
+				968D006E222FD597004B8D89 /* SimpleModal.xib */,
+			);
+			path = SimpleModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				968D0060222FD541004B8D89 /* Assets.xcassets in Resources */,
+				968D0070222FD597004B8D89 /* SimpleModal.xib in Resources */,
 				968D0063222FD541004B8D89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +158,7 @@
 			files = (
 				968D005E222FD540004B8D89 /* ViewController.swift in Sources */,
 				968D005C222FD540004B8D89 /* AppDelegate.swift in Sources */,
+				968D006F222FD597004B8D89 /* SimpleModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

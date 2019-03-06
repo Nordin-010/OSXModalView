@@ -22,6 +22,12 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func didPressShowModal(_ sender: Any) {
+        let modal = SimpleModal(windowNibName: "SimpleModal")
+        self.view.window?.beginSheet(modal.window!, completionHandler: { response in
+            print("Finished device selection")
+        })
+    }
+    
 }
 
