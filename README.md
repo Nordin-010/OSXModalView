@@ -7,9 +7,8 @@ the modal view from the top of the main window. When I press a "dismiss" button 
 dissapear.
 
 # Problem
-When firing SimpleModal view from my main window, SimpleModal view doesn't slide down from the top of my main window.
-But it pops up next to my main window. This is not the behaviour I want and is also not a behaviour of normal modal view in MacOS.
-Addionally, when I press on a button in the modal view, nothing happens. So a button press event is not send to my action handler
-in the code.
+When firing SimpleModal view from my main window, SimpleModal view slides down from the top of my main window.
+However, when I press on a button in the modal view, nothing happens. So a button press event is not send to my action handler
+in the code. So, if I don't get events, I can do nothing and the app gets stuck in the modal view.
 
-I hope someone can help me by understanding what's wrong with my approach.
+I hope someone can help me to get UI events dispatching working in the modal view.
