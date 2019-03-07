@@ -17,7 +17,22 @@ protocol SimpleModalDelegate: class {
 class SimpleModalVC: NSViewController {
 
     weak var delegate: SimpleModalDelegate?
+    var _param: String?
+    var _completionHandler: ((_ result: String?) -> Void)?
     
+    init(_ string: String?) {
+        super.init(nibName: nil, bundle: nil)
+        _param = string;
+    }
+    
+    init(completionHandler: @escaping(_ result: String?) -> Void) {
+        super.init(nibName: nil, bundle: nil)
+        _completionHandler = completionHandler;
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder);
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +44,11 @@ class SimpleModalVC: NSViewController {
     @IBAction func didPressButton(_ sender: Any) {
         print("didPressButton")
         
-        delegate?.didUpdateModal("Yo, I'm going down!")
+        //_delegate?.didUpdateModal("Yo, I'm going down!")
+        //delegate?.didUpdateModal("\(_param ?? "")")
+        
+        //_completionHandler?(nil)
+        _completionHandler?(nil)
         
         self.dismiss(self)
     }

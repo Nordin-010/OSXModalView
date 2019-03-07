@@ -28,9 +28,17 @@ class ViewController: NSViewController, SimpleModalDelegate {
 //            print("Finished device selection")
 //        })
         
-        let modal = SimpleModalVC()
+        //let modal = SimpleModalVC()
+        /*
+        let modal = SimpleModalVC("Param message")
         modal.delegate = self
+        */
+        let modal = SimpleModalVC(completionHandler: { (message) in
+            print("Received handler: \(message ?? "")")
+        })
+        
         // add a closure to get result :)
+        // 
         
         //self.presentAsModalWindow(modal)
         self.presentAsSheet(modal)
