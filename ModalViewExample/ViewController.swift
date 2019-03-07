@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, SimpleModalDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +23,23 @@ class ViewController: NSViewController {
     }
 
     @IBAction func didPressShowModal(_ sender: Any) {
-        let modal = SimpleModal(windowNibName: "SimpleModal")
-        self.view.window?.beginSheet(modal.window!, completionHandler: { response in
-            print("Finished device selection")
-        })
+//        let modal = SimpleModal(windowNibName: "SimpleModal")
+//        self.view.window?.beginSheet(modal.window!, completionHandler: { response in
+//            print("Finished device selection")
+//        })
+        
+        let modal = SimpleModalVC()
+        modal.delegate = self
+        // add a closure to get result :)
+        
+        //self.presentAsModalWindow(modal)
+        self.presentAsSheet(modal)
+        
+        print("end of presenting modal")
     }
     
+    func didUpdateModal(_ string: String?) {
+        print("Received following message: \(string ?? "")")
+    }
 }
 

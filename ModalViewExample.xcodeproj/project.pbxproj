@@ -13,6 +13,8 @@
 		968D0063222FD541004B8D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968D0061222FD541004B8D89 /* Main.storyboard */; };
 		968D006F222FD597004B8D89 /* SimpleModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D006D222FD597004B8D89 /* SimpleModal.swift */; };
 		968D0070222FD597004B8D89 /* SimpleModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968D006E222FD597004B8D89 /* SimpleModal.xib */; };
+		968D007322312B80004B8D89 /* SimpleModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D007122312B80004B8D89 /* SimpleModalVC.swift */; };
+		968D007422312B80004B8D89 /* SimpleModalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968D007222312B80004B8D89 /* SimpleModalVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		968D0065222FD541004B8D89 /* ModalViewExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModalViewExample.entitlements; sourceTree = "<group>"; };
 		968D006D222FD597004B8D89 /* SimpleModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModal.swift; sourceTree = "<group>"; };
 		968D006E222FD597004B8D89 /* SimpleModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleModal.xib; sourceTree = "<group>"; };
+		968D007122312B80004B8D89 /* SimpleModalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModalVC.swift; sourceTree = "<group>"; };
+		968D007222312B80004B8D89 /* SimpleModalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleModalVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				968D006D222FD597004B8D89 /* SimpleModal.swift */,
 				968D006E222FD597004B8D89 /* SimpleModal.xib */,
+				968D007122312B80004B8D89 /* SimpleModalVC.swift */,
+				968D007222312B80004B8D89 /* SimpleModalVC.xib */,
 			);
 			path = SimpleModal;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 			files = (
 				968D0060222FD541004B8D89 /* Assets.xcassets in Resources */,
 				968D0070222FD597004B8D89 /* SimpleModal.xib in Resources */,
+				968D007422312B80004B8D89 /* SimpleModalVC.xib in Resources */,
 				968D0063222FD541004B8D89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +165,7 @@
 			files = (
 				968D005E222FD540004B8D89 /* ViewController.swift in Sources */,
 				968D005C222FD540004B8D89 /* AppDelegate.swift in Sources */,
+				968D007322312B80004B8D89 /* SimpleModalVC.swift in Sources */,
 				968D006F222FD597004B8D89 /* SimpleModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
